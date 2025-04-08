@@ -1,0 +1,49 @@
+001-introduction and applications
+
+1. Basic concepts in Python:
+Math: Basic arithmatic operations.
+if/elif/else: Conditional logic.
+for/while: Looping through ranges, lists, or conditions.
+continue: Skip an iteration.
+break: Exit a loop early.
+functions: Rusable blocks of code.
+
+2. Variables:
+A variable is created with an "assignment", with the variable's name on the left and the value it should store on the right.
+Each variable is like a box, identified by the name of the variable.
+
+3. Key concepts for dynamic typing in python :
+   1. No explicit type declarations:
+      eg:
+      x=42   # x is an integer（数）
+      x="first year"  # Now x is a string（字符串）
+   2. Flexibility:
+      eg: Variables can be reassigned to values of different types freely.This makes the code concise and adaptable for rapid prototyping.
+
+4. Dynamic Typing and Static Typing:
+   1. Static typing （静态类型，比如Java,C++)
+   eg:
+   int x = 5
+  （此类型需提前声明，比如这里提前声明变量x为int（整数），此后x中就也只能储存整数）
+   2. Dynamic typing（动态类型，比如python，java script）
+  （比如同一个类型的x可以在运行的时候从数值变成字符串，且不会报错）
+
+5. Data types（较为重要）:
+   1. int---integer number("5""-3") 
+      整数---numetric（数值型）---immutable（不可变）
+   2. float---floating-point numbers("3.14""-0.5") 
+      浮点数---numetric--immutable
+   3. complex---complex numbers("3+4j") 
+      复数---numetric---immutable
+   4. str---sequence of unicode characters("hello""python") 
+      字符串---text---immutable
+   5. bool---boolean values("True" or "False") 
+      布尔类型---boolean---immutable
+
+   6. list---有序、可变的集合---[1,"a",True]
+   7. tuple---无序、不可变的集合---(1,"a",True)
+   8. set---无序的元素集合---{1,2,3}
+
+6.
+
+
