@@ -75,7 +75,32 @@ white space within lines doesn't matter at all, just make it hard to read
    x = a.b
    print(x.real, "+", x.img, "i") lead to a+bi
 
-10.
+10. a @ b marix product of a and b
+
+11. pipe and & and ^（二进制的东西） & indicates the shared number(1) and pipe(|) indicates the plus number(1) and ^ (same 0 different 1)
+还有 按位取反 右位移 左位移 实际使用时去ai搜一下
+
+12. bin(4) 
+    transform it into binary form
+
+    4 | 10
+    bin (4|10)
+
+13. tips: a += 2 (equals to a = a +2) (+= calls compound assignment 同理 -=）
+
+14. // only keep the whole number part and / keep the exact number
+
+15. comparison operators:
+    1. == equal to
+    2. != not equal to
+    3. >=/<=/>/< 
+
+
+
+
+    
+
+
 
 
 
