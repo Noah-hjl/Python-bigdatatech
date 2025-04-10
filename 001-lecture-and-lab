@@ -44,6 +44,40 @@ Each variable is like a box, identified by the name of the variable.
    7. tuple---无序、不可变的集合---(1,"a",True)
    8. set---无序的元素集合---{1,2,3}
 
-6.
+6. Indentation: Whitespace matters: indentation indicates code block, the common convetion is to use 4 space.
+   eg: the difference between
+   1. if x<4:
+          y=x*2
+          print(x)
+   2. if x<4:
+          y=x*2
+      print(x)
+white space within lines doesn't matter at all, just make it hard to read
+
+7. parentheses（调用） for grouping or calling
+   eg: print('first value", 1) arguments（参数） go inside of parentheses
+   kind of blank: if we want to call a function, we need to add a blank parenthese
+
+8. semantics (is all about meaning)
+   1. variable are just references to different objects, can be changed in the process
+   2.eg:
+     x = 4 (for now is a integer)
+     x= [1, 2, 3] (for now is a list)
+   3.同时变化 eg:
+     x = [1, 2, 3]
+     y = x
+     x.append(4) (append means add a value into the list)
+     print(y)
+   4. integer is immutable（理解成从上到下走，下部影响上）
+
+9. type complex number
+   1. eg:
+   x = a.b
+   print(x.real, "+", x.img, "i") lead to a+bi
+
+10.
+
+
+
 
 
