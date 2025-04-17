@@ -1,0 +1,47 @@
+1. NumPy and Pandas:
+
+   1.0 使用numpy关于数组的一些操作
+
+   1.1 Array attributes（数组属性）: size\shape\memory usage\data type
+   eg:
+     import numpy as np #导入numpy库并命名为np。
+     arr = np.array([[1, 2, 3], [4, 5, 6]])  #使用 np.array 函数创建一个二维的 numpy 数组。这个数组有两行三列。
+     print("数组形状：", arr.shape)  #shape 是 numpy 数组的一个属性，它返回一个元组，元组中的元素表示数组在各个维度上的大小。对于上述的二维数组，arr.shape 会返回 (2, 3)，表示数组有 2 行 3 列。
+     print("数组维度：", arr.ndim)  #ndim 也是 numpy 数组的属性，用于返回数组的维度数。对于二维数组，arr.ndim 返回 2。
+     print("数组数据类型：", arr.dtype)  #dtype 属性返回数组中元素的数据类型。由于数组中的元素都是整数，所以这里 arr.dtype 会返回类似 int64 这样的结果，表示元素的数据类型是 64 位整数。
+
+   1.2 Indexing（索引）:索引是用来访问数组中特定元素的方法。在 Python 里，索引从 0 开始。
+   eg:
+     import numpy as np  #同样是导入 numpy 库并简称为 np。
+     arr = np.array([1, 2, 3, 4, 5])  #创建一个一维的 numpy 数组
+     print("数组第一个元素：", arr[0])  #在 numpy 数组中，使用方括号和索引来访问特定位置的元素。在 Python 里，索引从 0 开始，所以 arr[0] 表示数组中的第一个元素，这里就是 1。
+
+   1.3 Slicing:切片用于获取数组的一个子集。通过指定起始索引、结束索引和步长，可以获取数组的一部分。
+   eg:
+     import numpy as np  #导入 numpy 库。
+     arr = np.array([1, 2, 3, 4, 5])  #创建一维 numpy 数组。
+     print("数组第 2 到 4 个元素：", arr[1:4])  #切片操作使用 start:stop 的形式。start 是起始索引（包含），stop 是结束索引（不包含）。所以 arr[1:4] 会返回从索引 1 到索引 3 的元素，即 [2, 3, 4]。注意上一part有提及，索引是从 0 开始。
+
+   1.4 Reshaping:重塑就是改变数组的形状，不过元素总数保持不变。
+   eg:
+     import numpy as np  #导入 numpy 库。
+     arr = np.array([1, 2, 3, 4, 5, 6])  #创建一维 numpy 数组。
+     reshaped_arr = arr.reshape(2, 3)  #reshape 是 numpy 数组的一个方法，用于改变数组的形状。这里将原一维数组重塑为一个 2 行 3 列的二维数组。需要注意的是，重塑前后数组的元素总数必须保持不变，即 2 * 3 = 6，与原数组元素个数相同。
+     print("重塑后的数组：\n", reshaped_arr)  #输出为[[1 2 3]
+                                                  [4 5 6]]
+
+   1.5 Concatenation and spliting:拼接是将多个数组连接成一个数组、拆分是把一个数组分割成多个子数组。
+   eg1:
+     import numpy as np
+     arr1 = np.array([1, 2, 3])
+     arr2 = np.array([4, 5, 6])
+     concatenated_arr = np.concatenate((arr1, arr2))
+     print("拼接后的数组：", concatenated_arr)
+    eg2:
+      import numpy as np
+      arr = np.array([1, 2, 3, 4, 5, 6])
+      split_arr = np.split(arr, 3)
+      print("拆分后的数组：", split_arr)
+
+Conclusion: 1. 需要在import后先定义数组，like arr = np.array([1,2,3,4,5])或者分开定义。 2.arr.shape（显示各个维度大小，行列） arr.ndim（显示维度数，数字，number of dimensions的缩写) arr.dtype（数据类型） 
+3.索引从0开始，arr[0]表示的是第一个元素，arr[x:y],使用start:stop的形式。 4.arr.reshape(x, y) 重塑成x行y列的形式，但是元素不变。 
